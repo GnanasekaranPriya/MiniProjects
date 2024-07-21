@@ -46,26 +46,16 @@ elif user_pick == 1:
 else: 
     print(scissors)
 
-if (user_pick == 0 and computer_pick == 1) or (user_pick == 1 and computer_pick == 0): 
-    if user_pick == 1:
-        print("User Wins")
-    else: 
-        print("Computer Wins")
-
-elif (user_pick == 1 and computer_pick == 2) or (user_pick == 2 and computer_pick == 1): 
-    if user_pick == 2:
-        print("User Wins")
-    else: 
-        print("Computer Wins")
-    
-elif (user_pick == 0 and computer_pick == 2) or (user_pick == 2 and computer_pick == 0): 
-    if user_pick == 0:
-        print("User Wins")
-    else: 
-        print("Computer Wins")
-
-else: 
+if (user_pick == 0 and computer_pick == 2):
+    print("User Wins")
+elif (user_pick == 1 and computer_pick == 0):
+    print('User Wins')
+elif (user_pick == 2 and computer_pick == 1):
+    print("User Wins")
+elif user_pick == computer_pick:
     print("You tied!")
+else: 
+    print("Computer wins")
 
 
 
