@@ -27,21 +27,24 @@ scissors = '''
 
 #Write your code below this line 👇
 import random
-computer_pick = random.randint(0,2)
-if computer_pick == 0: 
-    print(rock)
-elif computer_pick == 1: 
-    print(paper)
-else: 
-    print(scissors)
 
     
-
+# User input
 user_pick = int(input("What do you choose? Type 0 for Rock, 1 for Paper and 2 for Scissors."))
 
 if user_pick == 0: 
     print(rock)
 elif user_pick == 1: 
+    print(paper)
+else: 
+    print(scissors)
+    
+#Computer input
+computer_pick = random.randint(0,2)
+print("computer picks")
+if computer_pick == 0: 
+    print(rock)
+elif computer_pick == 1: 
     print(paper)
 else: 
     print(scissors)
